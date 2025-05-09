@@ -8,19 +8,19 @@
         
         default_layer {
             bindings = <
-                &kp Q    &kp W    &kp E    &kp R    &kp T    &kp Y      &kp U    &kp I    &kp O    &kp P    &kp LBKT &kp RBKT
-                &kp A    &kp S    &kp D    &kp F    &kp G    &kp H      &kp J    &kp K    &kp L    &kp SCLN &kp QUOT &kp BSLS
-                &kp Z    &kp X    &kp C    &kp V    &kp B    &kp N      &kp M    &kp COMM &kp DOT  &kp SLSH &kp MINS &kp EQL
-                &kp LCTL &kp LALT &kp LGUI &mo 1    &kp SPC  &kp BSPC   &kp DEL  &kp ENT  &kp LEFT &kp DOWN &kp UP   &kp RGHT
+                &kp Q    &kp W    &kp E    &kp R    &kp T    &kp Y    &kp U    &kp I    &kp O    &kp P    &kp LBKT &kp RBKT
+                &kp A    &kp S    &kp D    &kp F    &kp G    &kp H    &kp J    &kp K    &kp L    &kp SCLN &kp QUOT &kp BSLS
+                &kp Z    &kp X    &kp C    &kp V    &kp B    &kp N    &kp M    &kp COMM &kp DOT  &kp SLSH &kp MINS &kp EQL
+                &kp LCTL &kp LALT &kp LGUI &mo 1    &kp SPC  &kp BSPC &kp DEL  &kp ENT  &kp LEFT &kp DOWN &kp UP   &kp RGHT
             >;
         };
 
         raise_layer {
             bindings = <
-                &kp EXCL &kp AT   &kp HASH &kp DLLR &kp PERC &kp CARET  &kp AMPS &kp ASTR &kp LPRN &kp RPRN &kp UNDER &kp PIPE
-                &kp N1   &kp N2   &kp N3   &kp N4   &kp N5   &kp N6     &kp N7   &kp N8   &kp N9   &kp N0   &kp GRAVE &kp TILDE
-                &trans   &trans   &trans   &trans   &trans   &trans     &trans   &trans   &trans   &trans   &trans    &trans
-                &trans   &trans   &trans   &trans   &trans   &trans     &trans   &trans   &trans   &trans   &trans    &trans
+                &kp EXCL &kp AT   &kp HASH &kp DLLR &kp PERC &kp CARET &kp AMPS &kp ASTR &kp LPRN &kp RPRN &kp UNDER &kp PIPE
+                &kp N1   &kp N2   &kp N3   &kp N4   &kp N5   &kp N6   &kp N7   &kp N8   &kp N9   &kp N0   &kp GRAVE &kp TILDE
+                &trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans
+                &trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans
             >;
         };
     };
