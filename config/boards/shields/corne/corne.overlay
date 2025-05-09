@@ -31,13 +31,4 @@
                     <&gpio0 6  GPIO_ACTIVE_LOW>,   // C4: P0.06
                     <&gpio0 8  GPIO_ACTIVE_LOW>;   // C5: P0.08
     };
-};
-
-// Split communication (usualmente por Bluetooth, si usas cable avísame para ajustar)
-&split {
-    compatible = "zmk,split-bluetooth";
-    // Para split por cable, cambia a "zmk,split-serial" y define el pin
-    // serial-transport = "uart";
-    // serial-uart = <&uart1>;
-    // serial-uart-tx-pin = <15>; // P0.15
 }; 
