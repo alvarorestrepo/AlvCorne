@@ -23,3 +23,8 @@ include:
     shield: corne_left
   - board: nice_nano_v2
     shield: corne_right
+  - shield: corne
+    board: nice_nano_v2
+    config: config/boards/shields/corne/corne.conf
+    keymap: config/boards/shields/corne/corne.keymap
+    overlay: config/boards/shields/corne/corne.overlay

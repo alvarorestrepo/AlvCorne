@@ -1,0 +1,3 @@
+# Kconfig.shield for Corne split keyboard
+config SHIELD_CORNE
+    bool "Corne Split Keyboard" 

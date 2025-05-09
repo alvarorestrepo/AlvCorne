@@ -1,0 +1,43 @@
+// corne.overlay - Device tree overlay para Corne split
+// Aquí se define la matriz de teclas y hardware split 
+
+/ {
+    // Lado izquierdo
+    matrix_left: matrix_left {
+        compatible = "zmk,matrix-transform";
+        row-gpios = <&gpio0 6  GPIO_ACTIVE_LOW>,   // R0: P0.06
+                    <&gpio0 8  GPIO_ACTIVE_LOW>,   // R1: P0.08
+                    <&gpio0 17 GPIO_ACTIVE_LOW>,   // R2: P0.17
+                    <&gpio0 20 GPIO_ACTIVE_LOW>;   // R3: P0.20
+        col-gpios = <&gpio0 22 GPIO_ACTIVE_LOW>,   // C0: P0.22
+                    <&gpio0 24 GPIO_ACTIVE_LOW>,   // C1: P0.24
+                    <&gpio1 0  GPIO_ACTIVE_LOW>,   // C2: P1.00
+                    <&gpio0 11 GPIO_ACTIVE_LOW>,   // C3: P0.11
+                    <&gpio1 4  GPIO_ACTIVE_LOW>,   // C4: P1.04
+                    <&gpio1 6  GPIO_ACTIVE_LOW>;   // C5: P1.06
+    };
+
+    // Lado derecho
+    matrix_right: matrix_right {
+        compatible = "zmk,matrix-transform";
+        row-gpios = <&gpio0 31 GPIO_ACTIVE_LOW>,   // R0: P0.31
+                    <&gpio0 29 GPIO_ACTIVE_LOW>,   // R1: P0.29
+                    <&gpio0 2  GPIO_ACTIVE_LOW>,   // R2: P0.02
+                    <&gpio1 15 GPIO_ACTIVE_LOW>;   // R3: P1.15
+        col-gpios = <&gpio1 13 GPIO_ACTIVE_LOW>,   // C0: P1.13
+                    <&gpio1 11 GPIO_ACTIVE_LOW>,   // C1: P1.11
+                    <&gpio0 10 GPIO_ACTIVE_LOW>,   // C2: P0.10
+                    <&gpio0 9  GPIO_ACTIVE_LOW>,   // C3: P0.09
+                    <&gpio0 6  GPIO_ACTIVE_LOW>,   // C4: P0.06
+                    <&gpio0 8  GPIO_ACTIVE_LOW>;   // C5: P0.08
+    };
+};
+
+// Split communication (usualmente por Bluetooth, si usas cable avísame para ajustar)
+&split {
+    compatible = "zmk,split-bluetooth";
+    // Para split por cable, cambia a "zmk,split-serial" y define el pin
+    // serial-transport = "uart";
+    // serial-uart = <&uart1>;
+    // serial-uart-tx-pin = <15>; // P0.15
+}; 

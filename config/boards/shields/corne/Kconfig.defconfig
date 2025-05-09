@@ -1,0 +1,5 @@
+# Kconfig.defconfig for Corne split keyboard
+if SHIELD_CORNE
+config ZMK_KEYBOARD_NAME
+    default "corne"
+endif 
