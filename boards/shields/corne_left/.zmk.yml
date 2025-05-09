@@ -1,0 +1,10 @@
+file_format: "1"
+id: corne_left
+name: Custom Corne Left
+type: shield
+url: https://github.com/alvarorestrpo/zmk-config-corne
+requires: [nice_nano_v2]
+features:
+  - keys
+siblings:
+  - corne_right 
