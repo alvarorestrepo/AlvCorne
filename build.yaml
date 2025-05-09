@@ -22,12 +22,10 @@ include:
   - shield: corne
     board: nice_nano_v2
     config: config/boards/shields/corne/corne.conf
-    keymap: config/boards/shields/corne/corne.keymap
     overlay: config/boards/shields/corne/corne.overlay
     artifact-name: corne_left
   - shield: corne
     board: nice_nano_v2
     config: config/boards/shields/corne/corne.conf
-    keymap: config/boards/shields/corne/corne.keymap
     overlay: config/boards/shields/corne/corne.overlay
     artifact-name: corne_right
