@@ -2,8 +2,8 @@
 # For simple board + shield combinations, add them to the top level board and
 # shield arrays, for more control, add individual board + shield combinations
 # to the `include` property. You can also use the `cmake-args` property to
-# pass flags to the build command, `snippet` to add a Zephyr snippet, and
-# `artifact-name` to assign a name to distinguish build outputs from each other:
+# pass flags to the build command and `artifact-name` to assign a name to
+# distinguish build outputs from each other:
 #
 # board: [ "nice_nano_v2" ]
 # shield: [ "corne_left", "corne_right" ]
@@ -13,19 +13,13 @@
 #     shield: reviung41
 #   - board: nice_nano_v2
 #     shield: corne_left
-#     snippet: studio-rpc-usb-uart
-#     cmake-args: -DCONFIG_ZMK_STUDIO=y
-#     artifact-name: corne_left_with_studio
+#     cmake-args: -DCONFIG_ZMK_USB_LOGGING=y
+#     artifact-name: corne_left_with_logging
 #
 ---
 include:
-  - shield: corne
-    board: nice_nano_v2
-    config: config/boards/shields/corne/corne.conf
-    overlay: config/boards/shields/corne/corne.overlay
-    artifact-name: corne_left
-  - shield: corne
-    board: nice_nano_v2
-    config: config/boards/shields/corne/corne.conf
-    overlay: config/boards/shields/corne/corne.overlay
-    artifact-name: corne_right
+    - board: nice_nano_v2
+      shield: scottochoczard_left
+      snippet: studio-rpc-usb-uart
+    - board: nice_nano_v2
+      shield: scottochoczard_right

@@ -1,2 +1,0 @@
-# Kconfig.shields
-source "${CMAKE_CURRENT_LIST_DIR}/corne/Kconfig.shield" 

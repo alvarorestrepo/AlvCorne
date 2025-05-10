@@ -1,6 +1,0 @@
-# Kconfig.shield for Corne split keyboard
-config SHIELD_CORNE
-    bool "Corne Split Keyboard" 
-
-CONFIG_ZMK_SPLIT=y
-CONFIG_ZMK_BLE=y 
