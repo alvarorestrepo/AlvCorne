@@ -1,10 +1,10 @@
 #include "scottochoczard.dtsi"
 
 &kscan {
-    col-gpios = <&pro_micro 22 GPIO_ACTIVE_HIGH>,
-                <&pro_micro 24 GPIO_ACTIVE_HIGH>,
-                <&pro_micro 32 GPIO_ACTIVE_HIGH>,
-                <&pro_micro 11 GPIO_ACTIVE_HIGH>,
-                <&pro_micro 36 GPIO_ACTIVE_HIGH>,
-                <&pro_micro 38 GPIO_ACTIVE_HIGH>;
+    col-gpios = <&gpio0 22 GPIO_ACTIVE_HIGH>,
+                <&gpio0 24 GPIO_ACTIVE_HIGH>,
+                <&gpio1 0 GPIO_ACTIVE_HIGH>,
+                <&gpio0 11 GPIO_ACTIVE_HIGH>,
+                <&gpio1 4 GPIO_ACTIVE_HIGH>,
+                <&gpio1 6 GPIO_ACTIVE_HIGH>;
 };
