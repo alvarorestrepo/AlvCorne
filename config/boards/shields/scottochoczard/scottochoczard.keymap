@@ -90,7 +90,7 @@
                 &kp ESC           &kp Q      &kp W      &kp E       &kp R          &kp T          &kp Y            &kp U          &kp I       &kp O      &kp P         &kp BKSP
                 &lt NUMBER TAB    &kp A      &kp S      &kp D       &kp F          &kp G          &kp H            &kp J          &kp K       &kp L      &kp SEMI      &kp QUOT
                 &kp LSHFT         &kp Z      &kp X      &kp C       &kp V          &kp B          &kp N            &kp M         &kp COMMA    &kp DOT    &kp FSLH      &mt RSHIFT MINUS
-                &kp LCTRL       &mo GAME  &mo WINDOWS &kp LCTRL  &kp LALT          &kp LGUI       &kp RET       &lt NUMBER SPACE  &kp FUNCTION    &none      &none         &none
+                &kp LCTRL       &mo GAME  &mo WINDOWS &kp LCTRL  &kp LALT          &kp LGUI       &kp RET       &lt NUMBER SPACE  &mo FUNCTION    &none      &none         &none
             >;
         };
 
@@ -137,7 +137,7 @@
         function_layer {
             display-name = "Function";
             bindings =<
-                &bt BT_CLR   &bt BT(0)  &bt BT(1)  &bt BT(2)   &bt BT(3)     &bt BT(4)       &trans            &trans        &trans       &trans   &studio_unlock    &bootloader
+                &trans &bt BT_SEL 0 &bt BT_SEL 1   &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4  &none  &none  &to GAME  &to MAC  &to WINDOWS &trans
                 &trans &kp F1       &kp F2         &kp F3       &kp F4       &kp F5        &kp 6  &kp F7 &kp F8 &kp F9        &kp F10     &trans
                 &trans &kp F11      &studio_unlock &bt BT_CLR   &bootloader  &none         &none  &none  &none  &none         &kp F12     &trans
                 &trans &trans       &trans         &trans       &trans       &trans        &trans &trans &trans &trans        &trans      &trans
