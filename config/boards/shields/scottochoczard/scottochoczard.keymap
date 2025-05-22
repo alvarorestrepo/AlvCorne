@@ -107,10 +107,19 @@
         gaming_layer {
             display-name = "Gaming";
             bindings = <
-                &kp TAB   &kp Q   &kp W &kp F  &kp P     &kp G     &kp J        &kp L            &kp U     &kp Y   &kp BSPC       &kp BSPC
-                &kp CAPS  &kp A   &kp R &kp S  &kp T     &kp D     &kp H        &kp N            &kp E     &kp I   &kp O          &kp ENTER
-                &kp LSHFT &kp Z   &kp X &kp C  &kp V     &kp B     &kp K        &kp M            &kp COMMA &kp DOT &bm RSHFT FSLH &kp RSHFT
-                &kp ESC   &kp ESC &kp K &kp J  &kp LCTRL &kp SPACE &lt CODE TAB  &lt NUMBER ENTER   &none     &none   &none          &none
+//╭────────────┬──────────┬──────────┬──────────┬─────────────┬─────────────┬────────────────┬────────────────┬────────────┬──────────┬─────────────┬───────────────────╮
+//│  `         │          │          │          │     UP      │             │                │                │            │          │             │     DEL           │
+    &bt GRAVE    &trans     &trans      &trans      &kp UP         &trans         &trans          &trans         &trans       &trans    &kp LS(N4)        &kp DEL
+//├────────────┼──────────┼──────────┼──────────┼─────────────┼─────────────┼────────────────┼────────────────┼────────────┼──────────┼─────────────┼───────────────────┤
+//│            │          │          │  LEFT    │  DOWN       │   RIGHT     │                │                │            │          │             │                   │
+    &trans       &trans     &trans     &kp LEFT   &kp DOWN      &kp RIGHT         &trans            &trans        &kp LALT   &kp LGUI      &trans           &trans
+//├────────────┼──────────┼──────────┼──────────┼─────────────┼─────────────┼────────────────┼────────────────┼────────────┼──────────┼─────────────┼───────────────────┤
+//│            │          │          │          │             │             │                │                │            │          │             │                   │
+      &trans     &trans     &trans     &trans      &trans         &trans        &trans         &kp HOME        &kp PG_DN   &kp PG_UP    &kp END          &trans
+//├────────────┼──────────┼──────────┼──────────┼─────────────┼─────────────┼────────────────┼────────────────┼────────────┼──────────┼─────────────┼───────────────────┤
+//│            │          │          │          │             │                              │                │            │          │             │                   │
+      &trans     &trans     &trans     &trans      &trans                &trans                  &trans           &trans      &trans      &trans           &trans
+//╰────────────┴──────────┴──────────┴──────────┴─────────────┴──────────────────────────────┴────────────────┴────────────┴──────────┴─────────────┴───────────────────╯
             >;
         };
 
