@@ -152,7 +152,7 @@
             bindings = <
                 &kp P  &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
                 &trans &trans &trans &trans &trans &trans &trans &mkp LCLK &mkp RCLK &mkp MCLK &trans &trans
-                &trans &trans &trans &trans &trans &trans &trans &mkp MB4 &mkp MB5 &trans &trans &to mac_default_layer
+                &trans &trans &trans &trans &trans &trans &trans &mkp MB4 &mkp MB5 &trans &trans &to MAC
                 &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
             >;
         };
