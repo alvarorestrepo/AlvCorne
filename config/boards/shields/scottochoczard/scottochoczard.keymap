@@ -88,33 +88,38 @@
         };
 
         // Mouse movement configuration
-        &mmv {
+        mmv_config {
+            compatible = "zmk,behavior-input-two-axis";
             x-input-code = <INPUT_REL_X>;
             y-input-code = <INPUT_REL_Y>;
-            time-to-max-speed-ms = <200>;  // Reducido de 300 para respuesta más rápida
+            time-to-max-speed-ms = <200>;
             acceleration-exponent = <1>;
         };
 
         // Mouse scroll configuration
-        &msc {
+        msc_config {
+            compatible = "zmk,behavior-input-two-axis";
             x-input-code = <INPUT_REL_HWHEEL>;
             y-input-code = <INPUT_REL_WHEEL>;
-            time-to-max-speed-ms = <200>;  // Reducido de 300 para scroll más rápido
+            time-to-max-speed-ms = <200>;
             acceleration-exponent = <0>;
         };
 
         // Mouse button input processor
-        &mkp_input_listener {
+        mkp_input_listener {
+            compatible = "zmk,input-listener";
             input-processors = <&zip_temp_layer 2 2000>;
         };
 
         // Mouse movement input processor
-        &mmv_input_listener {
+        mmv_input_listener {
+            compatible = "zmk,input-listener";
             input-processors = <&zip_temp_layer 2 2000>;
         };
 
         // Mouse scroll input processor
-        &msc_input_listener {
+        msc_input_listener {
+            compatible = "zmk,input-listener";
             input-processors = <&zip_temp_layer 2 2000>;
         };
     };
