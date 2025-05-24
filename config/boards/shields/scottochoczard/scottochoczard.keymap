@@ -3,21 +3,19 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/pointing.h>
 
-// Configuración del ratón (valores recomendados)
-#define MOVE_VEL 600    // Movimiento rápido pero controlado
-#define SCROLL_VEL 20   // Scroll suave
+// Configuración del ratón (usando prefijo único)
+#define CUSTOM_MOVE_VEL 600
+#define CUSTOM_SCROLL_VEL 20
 
-// Movimiento
-#define MOVE_LEFT    MOVE_X(-MOVE_VEL)
-#define MOVE_RIGHT   MOVE_X(MOVE_VEL)
-#define MOVE_UP      MOVE_Y(-MOVE_VEL)
-#define MOVE_DOWN    MOVE_Y(MOVE_VEL)
-
-// Scroll
-#define SCROLL_LEFT  SCROLL_X(-SCROLL_VEL)
-#define SCROLL_RIGHT SCROLL_X(SCROLL_VEL)
-#define SCROLL_UP    SCROLL_Y(SCROLL_VEL)
-#define SCROLL_DOWN  SCROLL_Y(-SCROLL_VEL)
+// Redefinir con prefijo único
+#define CUSTOM_MOVE_LEFT  MOVE_X(-CUSTOM_MOVE_VEL)
+#define CUSTOM_MOVE_RIGHT MOVE_X(CUSTOM_MOVE_VEL)
+#define CUSTOM_MOVE_UP    MOVE_Y(-CUSTOM_MOVE_VEL)
+#define CUSTOM_MOVE_DOWN  MOVE_Y(CUSTOM_MOVE_VEL)
+#define CUSTOM_SCROLL_LEFT  SCROLL_X(-CUSTOM_SCROLL_VEL)
+#define CUSTOM_SCROLL_RIGHT SCROLL_X(CUSTOM_SCROLL_VEL)
+#define CUSTOM_SCROLL_UP    SCROLL_Y(CUSTOM_SCROLL_VEL)
+#define CUSTOM_SCROLL_DOWN  SCROLL_Y(-CUSTOM_SCROLL_VEL)
 
 #define MAC 0
 #define WINDOWS 1
@@ -175,8 +173,8 @@
             display-name = "Mouse";
             bindings = <
                 &trans &trans &trans &trans &trans &trans &trans &mkp MB4 &mkp MB5 &trans &trans &trans
-                &trans &trans &trans &trans &trans &trans &trans &mmv MOVE_LEFT &mmv MOVE_UP &mmv MOVE_DOWN &mmv MOVE_RIGHT &trans
-                &trans &trans &trans &trans &trans &trans &trans &mwh SCROLL_LEFT &mwh SCROLL_UP &mwh SCROLL_DOWN &mwh SCROLL_RIGHT &to mac_default_layer
+                &trans &trans &trans &trans &trans &trans &trans &mmv CUSTOM_MOVE_LEFT &mmv CUSTOM_MOVE_UP &mmv CUSTOM_MOVE_DOWN &mmv CUSTOM_MOVE_RIGHT &trans
+                &trans &trans &trans &trans &trans &trans &trans &mwh CUSTOM_SCROLL_LEFT &mwh CUSTOM_SCROLL_UP &mwh CUSTOM_SCROLL_DOWN &mwh CUSTOM_SCROLL_RIGHT &to mac_default_layer
                 &trans &trans &trans &trans &trans &trans &mkp LCLK &mkp RCLK &mkp MCLK &trans &trans &trans
             >;
         };
