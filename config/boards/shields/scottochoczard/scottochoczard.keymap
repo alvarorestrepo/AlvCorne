@@ -204,14 +204,14 @@
             display-name = "Mouse";
             bindings = <
 //╭────────────┬──────────┬──────────┬──────────┬─────────────┬─────────────┬────────────────┬────────────────┬────────────┬──────────┬─────────────┬───────────────────╮
-//│            │          │          │          │             │             │                │      MB4       │    MB5     │          │             │                   │
-    &trans       &trans     &trans     &trans     &trans        &trans        &trans           &mkp MB4        &mkp MB5     &trans     &trans        &trans
+//│     R      │          │          │          │             │             │                │      MB4       │    MB5     │          │             │                   │
+    &kp R        &trans     &trans     &trans     &trans        &trans        &trans           &mkp MB4        &mkp MB5     &trans     &trans        &trans
 //├────────────┼──────────┼──────────┼──────────┼─────────────┼─────────────┼────────────────┼────────────────┼────────────┼──────────┼─────────────┼───────────────────┤
 //│            │          │          │          │             │             │                │   MOVE_LEFT    │  MOVE_UP   │ MOVE_DOWN│ MOVE_RIGHT  │                   │
-    &trans       &trans     &trans     &trans     &trans        &trans        &trans           &mmv MOVE_LEFT  &mmv MOVE_UP &mmv MOVE_DOWN &mmv MOVE_RIGHT &trans
+    &trans       &trans     &trans     &trans     &trans        &trans        &trans           &mmv MOVE_X(-600) &mmv MOVE_Y(-600) &mmv MOVE_Y(600) &mmv MOVE_X(600) &trans
 //├────────────┼──────────┼──────────┼──────────┼─────────────┼─────────────┼────────────────┼────────────────┼────────────┼──────────┼─────────────┼───────────────────┤
 //│            │          │          │          │             │             │                │   SCRL_LEFT    │  SCRL_UP   │ SCRL_DOWN│ SCRL_RIGHT  │     TO MAC        │
-    &trans       &trans     &trans     &trans     &trans        &trans        &trans           &mwh SCRL_LEFT  &mwh SCRL_UP &mwh SCRL_DOWN &mwh SCRL_RIGHT &to mac_default_layer
+    &trans       &trans     &trans     &trans     &trans        &trans        &trans           &mwh SCROLL_X(-20) &mwh SCROLL_Y(20) &mwh SCROLL_Y(-20) &mwh SCROLL_X(20) &to mac_default_layer
 //├────────────┼──────────┼──────────┼──────────┼─────────────┼─────────────┼────────────────┼────────────────┼────────────┼──────────┼─────────────┼───────────────────┤
 //│            │          │          │          │             │             │      LCLK      │      RCLK      │    MCLK    │          │             │                   │
     &trans       &trans     &trans     &trans     &trans        &trans        &mkp LCLK        &mkp RCLK       &mkp MCLK    &trans     &trans        &trans
