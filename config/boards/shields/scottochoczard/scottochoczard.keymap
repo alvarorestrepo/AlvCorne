@@ -88,19 +88,13 @@
         };
 
         // Mouse movement configuration
-        mmv_config {
-            compatible = "zmk,behavior-input-two-axis";
-            x-input-code = <INPUT_REL_X>;
-            y-input-code = <INPUT_REL_Y>;
+        &mmv {
             time-to-max-speed-ms = <200>;
             acceleration-exponent = <1>;
         };
 
         // Mouse scroll configuration
-        msc_config {
-            compatible = "zmk,behavior-input-two-axis";
-            x-input-code = <INPUT_REL_HWHEEL>;
-            y-input-code = <INPUT_REL_WHEEL>;
+        &msc {
             time-to-max-speed-ms = <200>;
             acceleration-exponent = <0>;
         };
