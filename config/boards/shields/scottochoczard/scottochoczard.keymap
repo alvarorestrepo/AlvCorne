@@ -104,24 +104,6 @@
             time-to-max-speed-ms = <200>;
             acceleration-exponent = <0>;
         };
-
-        // Mouse button input processor
-        mkp_input_listener {
-            compatible = "zmk,input-listener";
-            input-processors = <&zip_temp_layer 2 2000>;
-        };
-
-        // Mouse movement input processor
-        mmv_input_listener {
-            compatible = "zmk,input-listener";
-            input-processors = <&zip_temp_layer 2 2000>;
-        };
-
-        // Mouse scroll input processor
-        msc_input_listener {
-            compatible = "zmk,input-listener";
-            input-processors = <&zip_temp_layer 2 2000>;
-        };
     };
     
     keymap {
