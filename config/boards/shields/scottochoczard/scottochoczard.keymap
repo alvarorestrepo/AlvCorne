@@ -3,15 +3,15 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/pointing.h>
 
-// Configuración del Ratón
-#define MOVE_UP MOVE_VERT(-1500)    // Velocidad vertical (negativo = arriba)
-#define MOVE_DOWN MOVE_VERT(1500)   // Positivo = abajo
-#define MOVE_LEFT MOVE_HOR(-1500)   // Horizontal (negativo = izquierda)
-#define MOVE_RIGHT MOVE_HOR(1500)
-#define SCROLL_UP SCROLL_VERT(20)    // Scroll vertical
-#define SCROLL_DOWN SCROLL_VERT(-20)
-#define SCROLL_LEFT SCROLL_HOR(-20)  // Scroll horizontal
-#define SCROLL_RIGHT SCROLL_HOR(20)
+// Configuración del Ratón con nombres únicos
+#define MY_MOVE_UP MOVE_Y(-1500)    // Velocidad vertical (negativo = arriba)
+#define MY_MOVE_DOWN MOVE_Y(1500)   // Positivo = abajo
+#define MY_MOVE_LEFT MOVE_X(-1500)   // Horizontal (negativo = izquierda)
+#define MY_MOVE_RIGHT MOVE_X(1500)
+#define MY_SCROLL_UP SCROLL_Y(20)    // Scroll vertical
+#define MY_SCROLL_DOWN SCROLL_Y(-20)
+#define MY_SCROLL_LEFT SCROLL_X(-20)  // Scroll horizontal
+#define MY_SCROLL_RIGHT SCROLL_X(20)
 
 #define MAC 0
 #define WINDOWS 1
@@ -169,9 +169,9 @@
             display-name = "Mouse";
             bindings = <
                 &trans &trans       &trans       &trans       &trans       &trans       &trans       &mkp MB4    &mkp MB5    &trans       &trans       &trans
-                &trans &trans       &trans       &trans       &trans       &trans       &trans       &mmv MOVE_LEFT &mmv MOVE_UP &mmv MOVE_DOWN &mmv MOVE_RIGHT &trans
-                &trans &trans       &trans       &trans       &trans       &trans       &trans       &mwh SCROLL_LEFT &mwh SCROLL_UP &mwh SCROLL_DOWN &mwh SCROLL_RIGHT &to MAC
-                &trans &trans       &trans       &trans       &trans       &trans       &trans       &mkp LCLK   &mkp RCLK   &mkp MCLK    &trans       &trans
+                &trans &trans       &trans       &trans       &trans       &trans       &trans       &mmv MY_MOVE_LEFT &mmv MY_MOVE_UP &mmv MY_MOVE_DOWN &mmv MY_MOVE_RIGHT &trans
+                &trans &trans       &trans       &trans       &trans       &trans       &trans       &mwh MY_SCROLL_LEFT &mwh MY_SCROLL_UP &mwh MY_SCROLL_DOWN &mwh MY_SCROLL_RIGHT &to MAC
+                &trans &trans       &trans       &trans       &trans       &trans       &mkp LCLK   &mkp RCLK   &mkp MCLK    &trans       &trans       &trans
             >;
         };
     };
