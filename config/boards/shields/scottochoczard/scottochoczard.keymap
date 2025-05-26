@@ -102,7 +102,7 @@
         gaming_layer {
             display-name = "Gaming";
             bindings = <
-                &kp GRAVE  &    &trans    &kp UP    &trans        &trans         &trans          &trans         &trans       &trans    &kp DOLLAR        &kp DEL
+                &kp GRAVE  &trans     &trans    &kp UP    &trans        &trans         &trans          &trans         &trans       &trans    &kp DOLLAR        &kp DEL
                 &trans     &trans     &kp LEFT   &kp DOWN    &kp RIGHT   &trans       &trans             &kp LALT       &kp LGUI      &trans       &trans        &trans
                 &trans     &trans     &trans     &trans      &trans         &trans        &trans         &kp HOME        &kp PG_DN   &kp PG_UP    &kp END          &trans
                 &trans     &trans     &trans     &trans      &trans        &trans        &trans            &trans           &trans      &trans      &trans           &trans
