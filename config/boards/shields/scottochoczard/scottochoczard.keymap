@@ -94,7 +94,7 @@
         windows_default_layer {
             display-name = "Windows";
             bindings = <
-               &kp GRAVE    &kp CARET   &trans     &trans      &kp HASH       &kp PRCNT     &kp EQUAL          &kp LPAR      &kp RPAR    &kp AMPS    &kp PIPE        &kp DEL
+               &kp GRAVE    &kp CARET   &mo MOUSE  &trans      &kp HASH       &kp PRCNT     &kp EQUAL          &kp LPAR      &kp RPAR    &kp AMPS    &kp PIPE        &kp DEL
                &kp ASTRK     &trans     &trans     &trans      &trans        &kp DLLR       &kp AT           &kp LBRC        &kp RBRC   &kp UNDER    &kp QMARK      &kp EXCL
                &kp C_VOL_DN &kp C_VOL_UP  &trans     &trans      &trans         &kp LT        &kp GT           &kp LBKT      &kp RBKT     &kp BSLH    &kp PLUS       &kp FSLH
                 &none         &none     &trans     &trans      &trans        &kp RET         &none          &kp SPACE       &kp LEFT   &kp C_VOL_DN  &none         &none
@@ -136,7 +136,7 @@
             bindings = <
                 &bt BT_CLR  &bt BT_SEL 0 &bt BT_SEL 1   &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4  &none  &none  &to GAME  &to MAC  &to WINDOWS &bootloader
                 &trans &kp F1       &kp F2         &kp F3       &kp F4       &kp F5        &kp F6  &kp F7 &kp F8 &kp F9        &kp F10     &trans
-                &trans &kp F11      &studio_unlock &bt BT_CLR   &bootloader  &to MOUSE     &none  &none  &none  &none         &kp F12     &trans
+                &trans &kp F11      &studio_unlock &bt BT_CLR   &bootloader  &mo MOUSE     &none  &none  &none  &none         &kp F12     &trans
                 &trans &trans       &trans         &trans       &trans       &trans        &trans &trans &trans &trans        &trans      &trans
             >;
         };
@@ -144,9 +144,9 @@
         mouse_layer {
             display-name = "Mouse";
             bindings = <
-                &kp P  &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
-                &trans &trans &trans &trans &trans &trans &trans &mkp LCLK &mkp RCLK &mkp MCLK &trans &trans
-                &trans &trans &trans &trans &trans &trans &trans &mkp MB4 &mkp MB5 &trans &trans &to MAC
+                &kp P &trans &trans &trans &trans &trans &trans &mmv MOVE_LEFT &mmv MOUSE_UP &mmv MOVE_DOWN &mmv MOVE_RIGHT &trans
+                &trans &trans &trans &trans &trans &trans &trans &mwh SCROLL_LEFT &mwh SCROLL_UP &mwh SCROLL_DOWN &mwh SCROLL_RIGHT &to MAC
+                &trans &trans &trans &trans &trans &trans &mkp LCLK &mkp RCLK &mkp MCLK &mkp MB4 &mkp MB5 &trans
                 &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
             >;
         };
