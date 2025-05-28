@@ -165,7 +165,7 @@
                 &trans      &trans       &trans         &trans       &trans       &trans        &trans  &trans  &trans  &trans       &trans      &trans
                 &trans      &mkp LCLK    &mkp MCLK      &mkp RCLK    &mkp MB4     &mkp MB5      &trans  &trans  &trans  &trans       &trans      &trans
                 &trans      &mmv MOVE_UP &mmv MOVE_DOWN &mmv MOVE_LEFT &mmv MOVE_RIGHT &trans  &trans  &trans  &trans  &trans       &trans      &trans
-                &trans      &trans       &trans         &trans       &trans       &trans        &trans  &trans  &trans  &trans       &trans      &trans
+                &trans      &trans       &trans         &trans       &trans       &trans        &trans  &trans  &trans  &to MAC      &trans      &trans
             >;
         };
     };
